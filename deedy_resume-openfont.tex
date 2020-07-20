@@ -47,6 +47,7 @@
 
 \documentclass[]{deedy-resume-openfont}
 \usepackage{fancyhdr}
+\usepackage{tikzpagenodes}
  
 \pagestyle{fancy}
 \fancyhf{}
@@ -65,6 +66,11 @@
 %     TITLE NAME
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{tikzpicture}[remember picture,overlay,shift={(current page.north west)}]
+\node[anchor=north west,xshift=1.75cm,yshift=-0.25cm]{\includegraphics[width=2.5cm]{Foto.jpeg}};
+\end{tikzpicture}
+
 \namesection{Massimiliano}{Bruni}{
 Email: \href{mailto:massimiliano.bruni@icloud.com}{massimiliano.bruni@icloud.com} | Cell: 334 924 0665
 }
